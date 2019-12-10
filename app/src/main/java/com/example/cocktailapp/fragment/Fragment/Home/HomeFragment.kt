@@ -1,4 +1,4 @@
-package com.example.cocktailapp.fragment.fragment.Home
+package com.example.cocktailapp.fragment.Fragment.Home
 
 
 import android.os.Bundle
@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 
 import com.example.cocktailapp.R
-import com.example.cocktailapp.databinding.FragmentFavorietenBinding
 import com.example.cocktailapp.databinding.FragmentHomeBinding
 
 /**
