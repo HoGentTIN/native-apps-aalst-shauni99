@@ -1,12 +1,12 @@
-package com.example.cocktailapp.injection.component
+package com.example.cocktailapp.Injection.component
 
 import com.example.cocktailapp.App
 import com.example.cocktailapp.Fragment.Home.HomeViewModel
 import com.example.cocktailapp.Fragment.Info.InfoViewModel
 import com.example.cocktailapp.Fragment.Search.SearchViewModel
+import com.example.cocktailapp.Injection.module.DatabaseModule
+import com.example.cocktailapp.Injection.module.NetworkModule
 import com.example.cocktailapp.Model.Repository.CocktailRepository
-import com.example.cocktailapp.injection.module.DatabaseModule
-import com.example.cocktailapp.injection.module.NetworkModule
 import dagger.Component
 import javax.inject.Singleton
 

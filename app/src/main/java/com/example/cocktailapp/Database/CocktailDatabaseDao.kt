@@ -11,7 +11,7 @@ interface CocktailDatabaseDao {
     @Query("SELECT * FROM cocktail_table WHERE alcoholic = :alcoholic")
     suspend fun getCocktailsAlcoholic(alcoholic: String?): List<Cocktail>
 
-    @Query("SELECT * FROM cocktail_table WHERE name = :drinkName")
+    @Query("SELECT * FROM cocktail_table WHERE nameCocktail = :drinkName")
     suspend fun getCocktailByName(drinkName: String?): Cocktail
 
     @Query("SELECT * FROM cocktail_table WHERE idDrink = :id")

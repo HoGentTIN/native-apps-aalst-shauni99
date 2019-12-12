@@ -1,4 +1,4 @@
-package com.example.cocktailapp.injection.module
+package com.example.cocktailapp.Injection.module
 
 import android.app.Application
 import android.content.Context

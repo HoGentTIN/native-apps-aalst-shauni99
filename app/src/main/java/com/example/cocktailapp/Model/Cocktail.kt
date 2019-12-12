@@ -10,7 +10,7 @@ data class Cocktail(
 
     @ColumnInfo(name = "thumb")
     var strDrinkThumb: String? = "",
-    @ColumnInfo(name = "name")
+    @ColumnInfo(name = "nameCocktail")
     var strDrink: String? = "",
     @ColumnInfo(name = "instructions")
     var strInstructions: String? = "",
@@ -23,7 +23,8 @@ data class Cocktail(
 
     @Embedded
 val ingredient: Ingredient,
+
     @PrimaryKey(autoGenerate = false)
-        var idDrink: String? = ""
+        var idDrink: String = ""
 
 )

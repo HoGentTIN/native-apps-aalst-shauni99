@@ -6,9 +6,10 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "ingredient_table")
 data class Ingredient(
+
     @PrimaryKey(autoGenerate = false)
-    var idIngredient: String? = "",
-    @ColumnInfo(name = "name")
+    var idIngredient: String = "",
+    @ColumnInfo(name = "nameIngredient")
     val name: String?,
     @ColumnInfo(name = "measure")
     val measure: String?
