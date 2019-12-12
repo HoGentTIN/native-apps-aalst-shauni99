@@ -4,7 +4,6 @@ import com.example.cocktailapp.Model.Cocktail
 
 interface ICocktailRepository {
 
-
     suspend fun loadAllAlcoholicCocktailsFromApi()
 
     suspend fun getAllAlcoholicCocktails(alcoholic: String): List<Cocktail>

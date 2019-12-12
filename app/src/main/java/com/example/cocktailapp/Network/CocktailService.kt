@@ -6,7 +6,6 @@ import retrofit2.http.QueryMap
 
 interface CocktailService {
 
-
     @GET("filter.php?a=Alcoholic")
     fun getAlcoholicCocktails(): List<Cocktail>
 

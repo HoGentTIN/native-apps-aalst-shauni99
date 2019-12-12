@@ -2,10 +2,10 @@ package com.example.cocktailapp.Model.Repository
 
 import android.content.Context
 import android.util.Log
+import com.example.cocktailapp.App
 import com.example.cocktailapp.Database.CocktailDatabase
 import com.example.cocktailapp.Database.CocktailDatabaseDao
 import com.example.cocktailapp.Model.Cocktail
-import com.example.cocktailapp.App
 import com.example.cocktailapp.Network.CocktailService
 import javax.inject.Inject
 
@@ -21,11 +21,6 @@ class CocktailRepository(context: Context) : ICocktailRepository {
 
     private val cocktailDatabase = CocktailDatabase.getInstance(context)
     private val cocktailDao: CocktailDatabaseDao = cocktailDatabase.cocktailDao
-
-    init {
-        App.appComponent.inject(this)
-    }
-
 
     override suspend fun insert(cocktail: Cocktail) {
         cocktailDao.insert(cocktail)
@@ -43,23 +38,17 @@ class CocktailRepository(context: Context) : ICocktailRepository {
         cocktailDao.nukeTable()
     }
 
-
     override suspend fun getAllAlcoholicCocktails(alcoholic: String): List<Cocktail> {
         return cocktailDao.getCocktailsAlcoholic(alcoholic)
     }
 
-
-
-
-
-    //ophalen cocktails uit api
+    // ophalen cocktails uit api
     override suspend fun loadAllAlcoholicCocktailsFromApi() {
         try {
             addCocktailsToDatabase(cocktailService.getAlcoholicCocktails())
-        }catch (e: Exception){
+        } catch (e: Exception) {
             Log.e("Error", e.message)
         }
-
     }
 
     // toevoegen cocktails aan Dao
@@ -67,10 +56,6 @@ class CocktailRepository(context: Context) : ICocktailRepository {
         cocktails.forEach {
 
                 cocktailDao.insert(it)
-
-
         }
     }
-
-
 }

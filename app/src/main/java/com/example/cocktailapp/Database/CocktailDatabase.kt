@@ -12,8 +12,6 @@ abstract class CocktailDatabase : RoomDatabase() {
     abstract val cocktailDao: CocktailDatabaseDao
     abstract val ingredientDao: IngredientDatabaseDao
 
-
-
     companion object {
         @Volatile
         private var INSTANCE: CocktailDatabase? = null

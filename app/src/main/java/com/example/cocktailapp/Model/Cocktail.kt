@@ -1,11 +1,9 @@
 package com.example.cocktailapp.Model
 
-import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-
 
 @Entity(tableName = "cocktail_table")
 data class Cocktail(
@@ -23,12 +21,9 @@ data class Cocktail(
     @ColumnInfo(name = "glass")
     var strGlass: String? = "",
 
-
-
     @Embedded
 val ingredient: Ingredient,
-@PrimaryKey(autoGenerate = false)
-    var idDrink: String? = ""
+    @PrimaryKey(autoGenerate = false)
+        var idDrink: String? = ""
 
 )
-

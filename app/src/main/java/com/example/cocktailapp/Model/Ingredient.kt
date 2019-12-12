@@ -11,4 +11,5 @@ data class Ingredient(
     @ColumnInfo(name = "name")
     val name: String?,
     @ColumnInfo(name = "measure")
-    val measure: String?)
+    val measure: String?
+)

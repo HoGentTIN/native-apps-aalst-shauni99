@@ -6,6 +6,8 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs"
 
+apply plugin: "org.jetbrains.dokka"
+
 
 
 
@@ -29,7 +31,8 @@ android {
         }
     }
     applicationVariants.all{
-        buildConfigField("String", "BASE_URL", "\"https://www.thecocktaildb.com/api/json/v1/1/\"")
+        buildConfigField("String", "BASE_URL", "\"https://www.thecocktaildb.com/api/json/v1/\"")
+        buildConfigField("String", "API_KEY", "\"1\"")
 
 
     }
@@ -37,6 +40,20 @@ android {
     dataBinding {
         enabled = true
     }
+
+    dokka{
+        outputFormat = 'html'
+        outputDirectory = 'kdoc'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    apply from: "$rootDir/ktlint.gradle"
 }
 
 dependencies {
@@ -52,7 +69,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
     implementation 'androidx.room:room-runtime:2.2.2'
-    annotationProcessor 'androidx.room:room-compiler:2.2.2'
+    kapt 'androidx.room:room-compiler:2.2.2'
 
 
     /*dagger*/
