@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HomeViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.cocktailapp.fragment.home</a>&nbsp;/&nbsp;<a href="./index.html">HomeViewModel</a><br/>
+<br/>
+<h1>HomeViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">HomeViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">HomeViewModel</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="alcoholic-cocktails.html">alcoholicCocktails</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">alcoholicCocktails</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cocktail-repository.html">cocktailRepository</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">cocktailRepository</span><span class="symbol">: </span><a href="../../com.example.cocktailapp.model.repository/-i-cocktail-repository/index.html"><span class="identifier">ICocktailRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="navigate-to-selected-cocktail.html">navigateToSelectedCocktail</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">navigateToSelectedCocktail</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="non-alcoholic-cocktails.html">nonAlcoholicCocktails</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">nonAlcoholicCocktails</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="display-cocktail-details.html">displayCocktailDetails</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">displayCocktailDetails</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeViewModel$displayCocktailDetails(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="display-cocktail-details-complete.html">displayCocktailDetailsComplete</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">displayCocktailDetailsComplete</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeViewModel$displayCocktailDetailsComplete(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-cocktails.html">loadCocktails</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">loadCocktails</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

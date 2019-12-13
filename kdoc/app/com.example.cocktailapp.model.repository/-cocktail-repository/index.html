@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CocktailRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.cocktailapp.model.repository</a>&nbsp;/&nbsp;<a href="./index.html">CocktailRepository</a><br/>
+<br/>
+<h1>CocktailRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">CocktailRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-i-cocktail-repository/index.html"><span class="identifier">ICocktailRepository</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">CocktailRepository</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="cocktail-service.html">cocktailService</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">cocktailService</span><span class="symbol">: </span><a href="../../com.example.cocktailapp.-network/-cocktail-service/index.html"><span class="identifier">CocktailService</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-cocktails-to-database.html">addCocktailsToDatabase</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">addCocktailsToDatabase</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$addCocktailsToDatabase(kotlin.collections.List((com.example.cocktailapp.model.Cocktail)))/cocktails">cocktails</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="ensure-delete.html">ensureDelete</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">ensureDelete</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-all-alcoholic-cocktails.html">getAllAlcoholicCocktails</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllAlcoholicCocktails</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getAllAlcoholicCocktails(kotlin.String)/alcoholic">alcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-by-id.html">getById</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getById(kotlin.String)/idDrink">idDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-by-name.html">getByName</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getByName</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getByName(kotlin.String)/strDrink">strDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="insert.html">insert</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$insert(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-all-alcoholic-cocktails-from-api.html">loadAllAlcoholicCocktailsFromApi</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">loadAllAlcoholicCocktailsFromApi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

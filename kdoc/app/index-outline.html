@@ -1,0 +1,1075 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="./index"><span class="identifier">app</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="alltypes/index.html"><span class="identifier">alltypes</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/-app/index.html"><span class="keyword">class </span><span class="identifier">App</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Application.html"><span class="identifier">Application</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/-app/-init-.html"><span class="identifier">App</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/-app/app-component.html"><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">appComponent</span><span class="symbol">: </span><a href="com.example.cocktailapp.injection.component/-app-component/index.html"><span class="identifier">AppComponent</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/-app/on-create.html"><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/index.html"><span class="identifier">@Singleton</span> <span class="identifier">@Component</span><span class="symbol">(</span>[NetworkModule, DatabaseModule]<span class="symbol">)</span> <span class="keyword">interface </span><span class="identifier">AppComponent</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/-builder/index.html"><span class="identifier">@Builder</span> <span class="keyword">interface </span><span class="identifier">Builder</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/-builder/build.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">build</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.injection.component/-app-component/index.html"><span class="identifier">AppComponent</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/-builder/database-module.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">databaseModule</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent.Builder$databaseModule(com.example.cocktailapp.injection.module.DatabaseModule)/databaseModule">databaseModule</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.injection.module/-database-module/index.html"><span class="identifier">DatabaseModule</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/-builder/network-module.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">networkModule</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent.Builder$networkModule(com.example.cocktailapp.injection.module.NetworkModule)/networkModule">networkModule</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.injection.module/-network-module/index.html"><span class="identifier">NetworkModule</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.App)/app">app</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp/-app/index.html"><span class="identifier">App</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.model.repository.CocktailRepository)/cocktailRepository">cocktailRepository</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model.repository/-cocktail-repository/index.html"><span class="identifier">CocktailRepository</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.fragment.home.HomeViewModel)/homeViewModel">homeViewModel</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.fragment.home/-home-view-model/index.html"><span class="identifier">HomeViewModel</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.fragment.info.InfoViewModel)/infoViewModel">infoViewModel</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.fragment.info/-info-view-model/index.html"><span class="identifier">InfoViewModel</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.fragment.search.SearchViewModel)/searchViewModel">searchViewModel</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.fragment.search/-search-view-model/index.html"><span class="identifier">SearchViewModel</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Cocktail</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Parcelable.html"><span class="identifier">Parcelable</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/-init-.html"><span class="identifier">Cocktail</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/idDrink">idDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strDrinkThumb">strDrinkThumb</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strDrink">strDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strInstructions">strInstructions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strAlcoholic">strAlcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strCategory">strCategory</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strGlass">strGlass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/id-drink.html"><span class="keyword">var </span><span class="identifier">idDrink</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-alcoholic.html"><span class="keyword">var </span><span class="identifier">strAlcoholic</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-category.html"><span class="keyword">var </span><span class="identifier">strCategory</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-drink.html"><span class="keyword">var </span><span class="identifier">strDrink</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-drink-thumb.html"><span class="keyword">var </span><span class="identifier">strDrinkThumb</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-glass.html"><span class="keyword">var </span><span class="identifier">strGlass</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-instructions.html"><span class="keyword">var </span><span class="identifier">strInstructions</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/index.html"><span class="keyword">class </span><span class="identifier">CocktailAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ListAdapter</span><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">CocktailViewHolder</span><span class="symbol">&gt;</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-init-.html"><span class="identifier">CocktailAdapter</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$<init>(com.example.cocktailapp.adapter.CocktailAdapter.OnClickListener)/onClickListener">onClickListener</span><span class="symbol">:</span>&nbsp;<span class="identifier">OnClickListener</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/are-contents-the-same.html"><span class="keyword">fun </span><span class="identifier">areContentsTheSame</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areContentsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/oldItem">oldItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areContentsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/newItem">newItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/are-items-the-same.html"><span class="keyword">fun </span><span class="identifier">areItemsTheSame</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areItemsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/oldItem">oldItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areItemsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/newItem">newItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-cocktail-view-holder/index.html"><span class="keyword">class </span><span class="identifier">CocktailViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-cocktail-view-holder/-init-.html"><span class="identifier">CocktailViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.CocktailViewHolder$<init>()/binding">binding</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-cocktail-view-holder/bind.html"><span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.CocktailViewHolder$bind(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-diff-call-back/index.html"><span class="keyword">companion</span> <span class="keyword">object </span><span class="identifier">DiffCallBack</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ItemCallback</span><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-diff-call-back/are-contents-the-same.html"><span class="keyword">fun </span><span class="identifier">areContentsTheSame</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areContentsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/oldItem">oldItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areContentsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/newItem">newItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-diff-call-back/are-items-the-same.html"><span class="keyword">fun </span><span class="identifier">areItemsTheSame</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areItemsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/oldItem">oldItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areItemsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/newItem">newItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/on-bind-view-holder.html"><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$onBindViewHolder(com.example.cocktailapp.adapter.CocktailAdapter.CocktailViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">CocktailViewHolder</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$onBindViewHolder(com.example.cocktailapp.adapter.CocktailAdapter.CocktailViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-on-click-listener/index.html"><span class="keyword">class </span><span class="identifier">OnClickListener</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-on-click-listener/-init-.html"><span class="identifier">OnClickListener</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.OnClickListener$<init>(kotlin.Function1((com.example.cocktailapp.model.Cocktail, kotlin.Unit)))/clickListener">clickListener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-on-click-listener/click-listener.html"><span class="keyword">val </span><span class="identifier">clickListener</span><span class="symbol">: </span><span class="symbol">(</span><span class="identifier">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-on-click-listener/on-click.html"><span class="keyword">fun </span><span class="identifier">onClick</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.OnClickListener$onClick(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/on-click-listener.html"><span class="keyword">val </span><span class="identifier">onClickListener</span><span class="symbol">: </span><span class="identifier">OnClickListener</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/on-create-view-holder.html"><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CocktailViewHolder</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/index.html"><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">CocktailDatabase</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RoomDatabase</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/-init-.html"><span class="identifier">CocktailDatabase</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/cocktail-dao.html"><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">cocktailDao</span><span class="symbol">: </span><a href="com.example.cocktailapp.database/-cocktail-database-dao/index.html"><span class="identifier">CocktailDatabaseDao</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/get-instance.html"><span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabase.Companion$getInstance(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.database/-cocktail-database/index.html"><span class="identifier">CocktailDatabase</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/ingredient-dao.html"><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">ingredientDao</span><span class="symbol">: </span><a href="com.example.cocktailapp.database/-ingredient-database-dao/index.html"><span class="identifier">IngredientDatabaseDao</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/index.html"><span class="keyword">interface </span><span class="identifier">CocktailDatabaseDao</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/get-cocktail-by-id.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getCocktailById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabaseDao$getCocktailById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/get-cocktail-by-name.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getCocktailByName</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabaseDao$getCocktailByName(kotlin.String)/drinkName">drinkName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/get-cocktails-alcoholic.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getCocktailsAlcoholic</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabaseDao$getCocktailsAlcoholic(kotlin.String)/alcoholic">alcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/insert.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabaseDao$insert(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/nuke-table.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">nukeTable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment/-cocktail-detail-fragment/index.html"><span class="keyword">class </span><span class="identifier">CocktailDetailFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment/-cocktail-detail-fragment/-init-.html"><span class="identifier">CocktailDetailFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment/-cocktail-detail-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.CocktailDetailFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.CocktailDetailFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.CocktailDetailFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/index.html"><span class="keyword">class </span><span class="identifier">CocktailRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/index.html"><span class="identifier">ICocktailRepository</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/-init-.html"><span class="identifier">CocktailRepository</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/add-cocktails-to-database.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">addCocktailsToDatabase</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$addCocktailsToDatabase(kotlin.collections.List((com.example.cocktailapp.model.Cocktail)))/cocktails">cocktails</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/cocktail-service.html"><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">cocktailService</span><span class="symbol">: </span><a href="com.example.cocktailapp.-network/-cocktail-service/index.html"><span class="identifier">CocktailService</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/ensure-delete.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">ensureDelete</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/get-all-alcoholic-cocktails.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllAlcoholicCocktails</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getAllAlcoholicCocktails(kotlin.String)/alcoholic">alcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/get-by-id.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getById(kotlin.String)/idDrink">idDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/get-by-name.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getByName</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getByName(kotlin.String)/strDrink">strDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/insert.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$insert(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/load-all-alcoholic-cocktails-from-api.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">loadAllAlcoholicCocktailsFromApi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.responses/-cocktail-response/index.html"><span class="keyword">class </span><span class="identifier">CocktailResponse</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.responses/-cocktail-response/-init-.html"><span class="identifier">CocktailResponse</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.responses/-cocktail-response/drinks.html"><span class="keyword">val </span><span class="identifier">drinks</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-cocktail-service/index.html"><span class="keyword">interface </span><span class="identifier">CocktailService</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-cocktail-service/get-alcoholic-cocktails.html"><span class="identifier">@Headers</span><span class="symbol">(</span>["Content-Type: application/json"]<span class="symbol">)</span> <span class="identifier">@GET</span><span class="symbol">(</span>"filter.php?a=Alcoholic"<span class="symbol">)</span> <span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAlcoholicCocktails</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model.responses/-cocktail-response/index.html"><span class="identifier">CocktailResponse</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-cocktail-service/get-movie-by-id.html"><span class="identifier">@Headers</span><span class="symbol">(</span>["Content-Type: application/json"]<span class="symbol">)</span> <span class="identifier">@GET</span><span class="symbol">(</span>"lookup.php?i={idDrink}"<span class="symbol">)</span> <span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getMovieById</span><span class="symbol">(</span><span class="identifier">@QueryMap</span> <span class="identifier" id="com.example.cocktailapp.Network.CocktailService$getMovieById(java.util.HashMap((kotlin.String, )))/hashMap">hashMap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;HashMap()<span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-cocktail-service/get-non-alcoholic-cocktails.html"><span class="identifier">@Headers</span><span class="symbol">(</span>["Content-Type: application/json"]<span class="symbol">)</span> <span class="identifier">@GET</span><span class="symbol">(</span>"filter.php?a=Non_Alcoholic"<span class="symbol">)</span> <span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getNonAlcoholicCocktails</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model.responses/-cocktail-response/index.html"><span class="identifier">CocktailResponse</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/-database-module/index.html"><span class="identifier">@Module</span> <span class="keyword">class </span><span class="identifier">DatabaseModule</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/-database-module/-init-.html"><span class="identifier">DatabaseModule</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.module.DatabaseModule$<init>(android.app.Application)/application">application</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Application.html"><span class="identifier">Application</span></a><span class="symbol">)</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.favorieten/-favorieten-fragment/index.html"><span class="keyword">class </span><span class="identifier">FavorietenFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.favorieten/-favorieten-fragment/-init-.html"><span class="identifier">FavorietenFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.favorieten/-favorieten-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.favorieten.FavorietenFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.favorieten.FavorietenFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.favorieten.FavorietenFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-fragment/index.html"><span class="keyword">class </span><span class="identifier">HomeFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-fragment/-init-.html"><span class="identifier">HomeFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/index.html"><span class="keyword">class </span><span class="identifier">HomeViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/-init-.html"><span class="identifier">HomeViewModel</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/alcoholic-cocktails.html"><span class="keyword">val </span><span class="identifier">alcoholicCocktails</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/cocktail-repository.html"><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">cocktailRepository</span><span class="symbol">: </span><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/index.html"><span class="identifier">ICocktailRepository</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/display-cocktail-details.html"><span class="keyword">fun </span><span class="identifier">displayCocktailDetails</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeViewModel$displayCocktailDetails(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/display-cocktail-details-complete.html"><span class="keyword">fun </span><span class="identifier">displayCocktailDetailsComplete</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeViewModel$displayCocktailDetailsComplete(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/load-cocktails.html"><span class="keyword">fun </span><span class="identifier">loadCocktails</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/navigate-to-selected-cocktail.html"><span class="keyword">val </span><span class="identifier">navigateToSelectedCocktail</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/non-alcoholic-cocktails.html"><span class="keyword">val </span><span class="identifier">nonAlcoholicCocktails</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/index.html"><span class="keyword">interface </span><span class="identifier">ICocktailRepository</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/add-cocktails-to-database.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">addCocktailsToDatabase</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$addCocktailsToDatabase(kotlin.collections.List((com.example.cocktailapp.model.Cocktail)))/cocktails">cocktails</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/ensure-delete.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">ensureDelete</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/get-all-alcoholic-cocktails.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllAlcoholicCocktails</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$getAllAlcoholicCocktails(kotlin.String)/alcoholic">alcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/get-by-id.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$getById(kotlin.String)/idDrink">idDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/get-by-name.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getByName</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$getByName(kotlin.String)/strDrink">strDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/insert.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$insert(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/load-all-alcoholic-cocktails-from-api.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">loadAllAlcoholicCocktailsFromApi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-fragment/index.html"><span class="keyword">class </span><span class="identifier">InfoFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-fragment/-init-.html"><span class="identifier">InfoFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.info.InfoFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.info.InfoFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.info.InfoFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-view-model/index.html"><span class="keyword">class </span><span class="identifier">InfoViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-view-model/-init-.html"><span class="identifier">InfoViewModel</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/index.html"><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Ingredient</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/-init-.html"><span class="identifier">Ingredient</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.Ingredient$<init>(kotlin.String, kotlin.String, kotlin.String)/idIngredient">idIngredient</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Ingredient$<init>(kotlin.String, kotlin.String, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Ingredient$<init>(kotlin.String, kotlin.String, kotlin.String)/measure">measure</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/id-ingredient.html"><span class="keyword">var </span><span class="identifier">idIngredient</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/measure.html"><span class="keyword">val </span><span class="identifier">measure</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/name.html"><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-ingredient-database-dao/index.html"><span class="keyword">interface </span><span class="identifier">IngredientDatabaseDao</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-ingredient-database-dao/get-ingredient-by-id.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getIngredientById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.IngredientDatabaseDao$getIngredientById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-ingredient/index.html"><span class="identifier">Ingredient</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-ingredient-database-dao/insert.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.IngredientDatabaseDao$insert(com.example.cocktailapp.model.Ingredient)/ingredient">ingredient</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-ingredient/index.html"><span class="identifier">Ingredient</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.main/-main-activity/index.html"><span class="keyword">class </span><span class="identifier">MainActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.main/-main-activity/-init-.html"><span class="identifier">MainActivity</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.main/-main-activity/on-create.html"><span class="keyword">protected</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.main.MainActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/-network-module/index.html"><span class="identifier">@Module</span> <span class="keyword">class </span><span class="identifier">NetworkModule</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/-network-module/-init-.html"><span class="identifier">NetworkModule</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.module.NetworkModule$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-fragment/index.html"><span class="keyword">class </span><span class="identifier">SearchFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-fragment/-init-.html"><span class="identifier">SearchFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.search.SearchFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.search.SearchFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.search.SearchFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-view-model/index.html"><span class="keyword">class </span><span class="identifier">SearchViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-view-model/-init-.html"><span class="identifier">SearchViewModel</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-service-interceptor/index.html"><span class="keyword">class </span><span class="identifier">ServiceInterceptor</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Interceptor</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-service-interceptor/-init-.html"><span class="identifier">ServiceInterceptor</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.Network.ServiceInterceptor$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-service-interceptor/intercept.html"><span class="keyword">fun </span><span class="identifier">intercept</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.Network.ServiceInterceptor$intercept(okhttp3.Interceptor.Chain)/chain">chain</span><span class="symbol">:</span>&nbsp;<span class="identifier">Chain</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Response</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/-app/index.html"><span class="keyword">class </span><span class="identifier">App</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Application.html"><span class="identifier">Application</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/-app/-init-.html"><span class="identifier">App</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/-app/app-component.html"><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">appComponent</span><span class="symbol">: </span><a href="com.example.cocktailapp.injection.component/-app-component/index.html"><span class="identifier">AppComponent</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp/-app/on-create.html"><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.adapter</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/bind-image.html"><span class="keyword">fun </span><span class="identifier">bindImage</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter$bindImage(android.widget.ImageView, kotlin.String)/imgView">imgView</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/ImageView.html"><span class="identifier">ImageView</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter$bindImage(android.widget.ImageView, kotlin.String)/imgUrl">imgUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/bind-recycler-view.html"><span class="keyword">fun </span><span class="identifier">bindRecyclerView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter$bindRecyclerView(androidx.recyclerview.widget.RecyclerView, kotlin.collections.List((com.example.cocktailapp.model.Cocktail)))/recyclerView">recyclerView</span><span class="symbol">:</span>&nbsp;<span class="identifier">RecyclerView</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter$bindRecyclerView(androidx.recyclerview.widget.RecyclerView, kotlin.collections.List((com.example.cocktailapp.model.Cocktail)))/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/index.html"><span class="keyword">class </span><span class="identifier">CocktailAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ListAdapter</span><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">CocktailViewHolder</span><span class="symbol">&gt;</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-init-.html"><span class="identifier">CocktailAdapter</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$<init>(com.example.cocktailapp.adapter.CocktailAdapter.OnClickListener)/onClickListener">onClickListener</span><span class="symbol">:</span>&nbsp;<span class="identifier">OnClickListener</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/are-contents-the-same.html"><span class="keyword">fun </span><span class="identifier">areContentsTheSame</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areContentsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/oldItem">oldItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areContentsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/newItem">newItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/are-items-the-same.html"><span class="keyword">fun </span><span class="identifier">areItemsTheSame</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areItemsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/oldItem">oldItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areItemsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/newItem">newItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-cocktail-view-holder/index.html"><span class="keyword">class </span><span class="identifier">CocktailViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-cocktail-view-holder/-init-.html"><span class="identifier">CocktailViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.CocktailViewHolder$<init>()/binding">binding</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-cocktail-view-holder/bind.html"><span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.CocktailViewHolder$bind(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-diff-call-back/index.html"><span class="keyword">companion</span> <span class="keyword">object </span><span class="identifier">DiffCallBack</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ItemCallback</span><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-diff-call-back/are-contents-the-same.html"><span class="keyword">fun </span><span class="identifier">areContentsTheSame</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areContentsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/oldItem">oldItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areContentsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/newItem">newItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-diff-call-back/are-items-the-same.html"><span class="keyword">fun </span><span class="identifier">areItemsTheSame</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areItemsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/oldItem">oldItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.DiffCallBack$areItemsTheSame(com.example.cocktailapp.model.Cocktail, com.example.cocktailapp.model.Cocktail)/newItem">newItem</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/on-bind-view-holder.html"><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$onBindViewHolder(com.example.cocktailapp.adapter.CocktailAdapter.CocktailViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<span class="identifier">CocktailViewHolder</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$onBindViewHolder(com.example.cocktailapp.adapter.CocktailAdapter.CocktailViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-on-click-listener/index.html"><span class="keyword">class </span><span class="identifier">OnClickListener</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-on-click-listener/-init-.html"><span class="identifier">OnClickListener</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.OnClickListener$<init>(kotlin.Function1((com.example.cocktailapp.model.Cocktail, kotlin.Unit)))/clickListener">clickListener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-on-click-listener/click-listener.html"><span class="keyword">val </span><span class="identifier">clickListener</span><span class="symbol">: </span><span class="symbol">(</span><span class="identifier">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/-on-click-listener/on-click.html"><span class="keyword">fun </span><span class="identifier">onClick</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter.OnClickListener$onClick(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/on-click-listener.html"><span class="keyword">val </span><span class="identifier">onClickListener</span><span class="symbol">: </span><span class="identifier">OnClickListener</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.adapter/-cocktail-adapter/on-create-view-holder.html"><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.adapter.CocktailAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CocktailViewHolder</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.database</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/index.html"><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">CocktailDatabase</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RoomDatabase</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/-init-.html"><span class="identifier">CocktailDatabase</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/cocktail-dao.html"><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">cocktailDao</span><span class="symbol">: </span><a href="com.example.cocktailapp.database/-cocktail-database-dao/index.html"><span class="identifier">CocktailDatabaseDao</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/get-instance.html"><span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabase.Companion$getInstance(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.database/-cocktail-database/index.html"><span class="identifier">CocktailDatabase</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database/ingredient-dao.html"><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">ingredientDao</span><span class="symbol">: </span><a href="com.example.cocktailapp.database/-ingredient-database-dao/index.html"><span class="identifier">IngredientDatabaseDao</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/index.html"><span class="keyword">interface </span><span class="identifier">CocktailDatabaseDao</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/get-cocktail-by-id.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getCocktailById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabaseDao$getCocktailById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/get-cocktail-by-name.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getCocktailByName</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabaseDao$getCocktailByName(kotlin.String)/drinkName">drinkName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/get-cocktails-alcoholic.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getCocktailsAlcoholic</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabaseDao$getCocktailsAlcoholic(kotlin.String)/alcoholic">alcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/insert.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.CocktailDatabaseDao$insert(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-cocktail-database-dao/nuke-table.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">nukeTable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-ingredient-database-dao/index.html"><span class="keyword">interface </span><span class="identifier">IngredientDatabaseDao</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-ingredient-database-dao/get-ingredient-by-id.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getIngredientById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.IngredientDatabaseDao$getIngredientById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-ingredient/index.html"><span class="identifier">Ingredient</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.database/-ingredient-database-dao/insert.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.database.IngredientDatabaseDao$insert(com.example.cocktailapp.model.Ingredient)/ingredient">ingredient</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-ingredient/index.html"><span class="identifier">Ingredient</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment/-cocktail-detail-fragment/index.html"><span class="keyword">class </span><span class="identifier">CocktailDetailFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment/-cocktail-detail-fragment/-init-.html"><span class="identifier">CocktailDetailFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment/-cocktail-detail-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.CocktailDetailFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.CocktailDetailFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.CocktailDetailFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.favorieten/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.fragment.favorieten</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.favorieten/-favorieten-fragment/index.html"><span class="keyword">class </span><span class="identifier">FavorietenFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.favorieten/-favorieten-fragment/-init-.html"><span class="identifier">FavorietenFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.favorieten/-favorieten-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.favorieten.FavorietenFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.favorieten.FavorietenFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.favorieten.FavorietenFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.fragment.home</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-fragment/index.html"><span class="keyword">class </span><span class="identifier">HomeFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-fragment/-init-.html"><span class="identifier">HomeFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/index.html"><span class="keyword">class </span><span class="identifier">HomeViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/-init-.html"><span class="identifier">HomeViewModel</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/alcoholic-cocktails.html"><span class="keyword">val </span><span class="identifier">alcoholicCocktails</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/cocktail-repository.html"><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">cocktailRepository</span><span class="symbol">: </span><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/index.html"><span class="identifier">ICocktailRepository</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/display-cocktail-details.html"><span class="keyword">fun </span><span class="identifier">displayCocktailDetails</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeViewModel$displayCocktailDetails(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/display-cocktail-details-complete.html"><span class="keyword">fun </span><span class="identifier">displayCocktailDetailsComplete</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.home.HomeViewModel$displayCocktailDetailsComplete(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/load-cocktails.html"><span class="keyword">fun </span><span class="identifier">loadCocktails</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/navigate-to-selected-cocktail.html"><span class="keyword">val </span><span class="identifier">navigateToSelectedCocktail</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.home/-home-view-model/non-alcoholic-cocktails.html"><span class="keyword">val </span><span class="identifier">nonAlcoholicCocktails</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.fragment.info</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-fragment/index.html"><span class="keyword">class </span><span class="identifier">InfoFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-fragment/-init-.html"><span class="identifier">InfoFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.info.InfoFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.info.InfoFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.info.InfoFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-view-model/index.html"><span class="keyword">class </span><span class="identifier">InfoViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.info/-info-view-model/-init-.html"><span class="identifier">InfoViewModel</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.fragment.search</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-fragment/index.html"><span class="keyword">class </span><span class="identifier">SearchFragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-fragment/-init-.html"><span class="identifier">SearchFragment</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-fragment/on-create-view.html"><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.fragment.search.SearchFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.search.SearchFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.fragment.search.SearchFragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-view-model/index.html"><span class="keyword">class </span><span class="identifier">SearchViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.fragment.search/-search-view-model/-init-.html"><span class="identifier">SearchViewModel</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.injection.component</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/index.html"><span class="identifier">@Singleton</span> <span class="identifier">@Component</span><span class="symbol">(</span>[NetworkModule, DatabaseModule]<span class="symbol">)</span> <span class="keyword">interface </span><span class="identifier">AppComponent</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/-builder/index.html"><span class="identifier">@Builder</span> <span class="keyword">interface </span><span class="identifier">Builder</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/-builder/build.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">build</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.injection.component/-app-component/index.html"><span class="identifier">AppComponent</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/-builder/database-module.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">databaseModule</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent.Builder$databaseModule(com.example.cocktailapp.injection.module.DatabaseModule)/databaseModule">databaseModule</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.injection.module/-database-module/index.html"><span class="identifier">DatabaseModule</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/-builder/network-module.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">networkModule</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent.Builder$networkModule(com.example.cocktailapp.injection.module.NetworkModule)/networkModule">networkModule</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.injection.module/-network-module/index.html"><span class="identifier">NetworkModule</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.App)/app">app</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp/-app/index.html"><span class="identifier">App</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.model.repository.CocktailRepository)/cocktailRepository">cocktailRepository</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model.repository/-cocktail-repository/index.html"><span class="identifier">CocktailRepository</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.fragment.home.HomeViewModel)/homeViewModel">homeViewModel</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.fragment.home/-home-view-model/index.html"><span class="identifier">HomeViewModel</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.fragment.info.InfoViewModel)/infoViewModel">infoViewModel</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.fragment.info/-info-view-model/index.html"><span class="identifier">InfoViewModel</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.component/-app-component/inject.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">inject</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.component.AppComponent$inject(com.example.cocktailapp.fragment.search.SearchViewModel)/searchViewModel">searchViewModel</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.fragment.search/-search-view-model/index.html"><span class="identifier">SearchViewModel</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.injection.module</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/-database-module/index.html"><span class="identifier">@Module</span> <span class="keyword">class </span><span class="identifier">DatabaseModule</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/-database-module/-init-.html"><span class="identifier">DatabaseModule</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.module.DatabaseModule$<init>(android.app.Application)/application">application</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Application.html"><span class="identifier">Application</span></a><span class="symbol">)</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/-network-module/index.html"><span class="identifier">@Module</span> <span class="keyword">class </span><span class="identifier">NetworkModule</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.injection.module/-network-module/-init-.html"><span class="identifier">NetworkModule</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.injection.module.NetworkModule$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.main/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.main</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.main/-main-activity/index.html"><span class="keyword">class </span><span class="identifier">MainActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.main/-main-activity/-init-.html"><span class="identifier">MainActivity</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.main/-main-activity/on-create.html"><span class="keyword">protected</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.main.MainActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.model</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Cocktail</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Parcelable.html"><span class="identifier">Parcelable</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/-init-.html"><span class="identifier">Cocktail</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/idDrink">idDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strDrinkThumb">strDrinkThumb</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strDrink">strDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strInstructions">strInstructions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strAlcoholic">strAlcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strCategory">strCategory</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Cocktail$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String, kotlin.String)/strGlass">strGlass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/id-drink.html"><span class="keyword">var </span><span class="identifier">idDrink</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-alcoholic.html"><span class="keyword">var </span><span class="identifier">strAlcoholic</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-category.html"><span class="keyword">var </span><span class="identifier">strCategory</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-drink.html"><span class="keyword">var </span><span class="identifier">strDrink</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-drink-thumb.html"><span class="keyword">var </span><span class="identifier">strDrinkThumb</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-glass.html"><span class="keyword">var </span><span class="identifier">strGlass</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-cocktail/str-instructions.html"><span class="keyword">var </span><span class="identifier">strInstructions</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/index.html"><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Ingredient</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/-init-.html"><span class="identifier">Ingredient</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.Ingredient$<init>(kotlin.String, kotlin.String, kotlin.String)/idIngredient">idIngredient</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Ingredient$<init>(kotlin.String, kotlin.String, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.example.cocktailapp.model.Ingredient$<init>(kotlin.String, kotlin.String, kotlin.String)/measure">measure</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/id-ingredient.html"><span class="keyword">var </span><span class="identifier">idIngredient</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/measure.html"><span class="keyword">val </span><span class="identifier">measure</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model/-ingredient/name.html"><span class="keyword">val </span><span class="identifier">name</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.model.repository</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/index.html"><span class="keyword">class </span><span class="identifier">CocktailRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/index.html"><span class="identifier">ICocktailRepository</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/-init-.html"><span class="identifier">CocktailRepository</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/add-cocktails-to-database.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">addCocktailsToDatabase</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$addCocktailsToDatabase(kotlin.collections.List((com.example.cocktailapp.model.Cocktail)))/cocktails">cocktails</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/cocktail-service.html"><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">cocktailService</span><span class="symbol">: </span><a href="com.example.cocktailapp.-network/-cocktail-service/index.html"><span class="identifier">CocktailService</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/ensure-delete.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">ensureDelete</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/get-all-alcoholic-cocktails.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllAlcoholicCocktails</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getAllAlcoholicCocktails(kotlin.String)/alcoholic">alcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/get-by-id.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getById(kotlin.String)/idDrink">idDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/get-by-name.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getByName</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$getByName(kotlin.String)/strDrink">strDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/insert.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.CocktailRepository$insert(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-cocktail-repository/load-all-alcoholic-cocktails-from-api.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">loadAllAlcoholicCocktailsFromApi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/index.html"><span class="keyword">interface </span><span class="identifier">ICocktailRepository</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/add-cocktails-to-database.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">addCocktailsToDatabase</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$addCocktailsToDatabase(kotlin.collections.List((com.example.cocktailapp.model.Cocktail)))/cocktails">cocktails</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/ensure-delete.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">ensureDelete</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/get-all-alcoholic-cocktails.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllAlcoholicCocktails</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$getAllAlcoholicCocktails(kotlin.String)/alcoholic">alcoholic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/get-by-id.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getById</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$getById(kotlin.String)/idDrink">idDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/get-by-name.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getByName</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$getByName(kotlin.String)/strDrink">strDrink</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">?</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/insert.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.model.repository.ICocktailRepository$insert(com.example.cocktailapp.model.Cocktail)/cocktail">cocktail</span><span class="symbol">:</span>&nbsp;<a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.repository/-i-cocktail-repository/load-all-alcoholic-cocktails-from-api.html"><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">loadAllAlcoholicCocktailsFromApi</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.responses/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.model.responses</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.responses/-cocktail-response/index.html"><span class="keyword">class </span><span class="identifier">CocktailResponse</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.responses/-cocktail-response/-init-.html"><span class="identifier">CocktailResponse</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.model.responses/-cocktail-response/drinks.html"><span class="keyword">val </span><span class="identifier">drinks</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">com.example.cocktailapp.Network</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-cocktail-service/index.html"><span class="keyword">interface </span><span class="identifier">CocktailService</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-cocktail-service/get-alcoholic-cocktails.html"><span class="identifier">@Headers</span><span class="symbol">(</span>["Content-Type: application/json"]<span class="symbol">)</span> <span class="identifier">@GET</span><span class="symbol">(</span>"filter.php?a=Alcoholic"<span class="symbol">)</span> <span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAlcoholicCocktails</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model.responses/-cocktail-response/index.html"><span class="identifier">CocktailResponse</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-cocktail-service/get-movie-by-id.html"><span class="identifier">@Headers</span><span class="symbol">(</span>["Content-Type: application/json"]<span class="symbol">)</span> <span class="identifier">@GET</span><span class="symbol">(</span>"lookup.php?i={idDrink}"<span class="symbol">)</span> <span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getMovieById</span><span class="symbol">(</span><span class="identifier">@QueryMap</span> <span class="identifier" id="com.example.cocktailapp.Network.CocktailService$getMovieById(java.util.HashMap((kotlin.String, )))/hashMap">hashMap</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;HashMap()<span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model/-cocktail/index.html"><span class="identifier">Cocktail</span></a></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-cocktail-service/get-non-alcoholic-cocktails.html"><span class="identifier">@Headers</span><span class="symbol">(</span>["Content-Type: application/json"]<span class="symbol">)</span> <span class="identifier">@GET</span><span class="symbol">(</span>"filter.php?a=Non_Alcoholic"<span class="symbol">)</span> <span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getNonAlcoholicCocktails</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="com.example.cocktailapp.model.responses/-cocktail-response/index.html"><span class="identifier">CocktailResponse</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-service-interceptor/index.html"><span class="keyword">class </span><span class="identifier">ServiceInterceptor</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Interceptor</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-service-interceptor/-init-.html"><span class="identifier">ServiceInterceptor</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.Network.ServiceInterceptor$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></a></a><br/>
+<a href="kdoc\app\index"><a href="com.example.cocktailapp.-network/-service-interceptor/intercept.html"><span class="keyword">fun </span><span class="identifier">intercept</span><span class="symbol">(</span><span class="identifier" id="com.example.cocktailapp.Network.ServiceInterceptor$intercept(okhttp3.Interceptor.Chain)/chain">chain</span><span class="symbol">:</span>&nbsp;<span class="identifier">Chain</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Response</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
