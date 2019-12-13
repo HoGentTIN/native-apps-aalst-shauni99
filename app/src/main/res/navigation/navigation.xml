@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/myNavHostFragment"
-        android:name="com.example.cocktailapp.Fragment.Home.HomeFragment"
+        android:name="com.example.cocktailapp.fragment.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -19,20 +19,34 @@
         <action
             android:id="@+id/action_myNavHostFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/showCocktailDetail"
+            app:destination="@id/cocktailDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/favorietenFragment"
-        android:name="com.example.cocktailapp.Fragment.Favorieten.FavorietenFragment"
+        android:name="com.example.cocktailapp.fragment.favorieten.FavorietenFragment"
         android:label="fragment_favorieten"
         tools:layout="@layout/fragment_favorieten" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.cocktailapp.Fragment.Search.SearchFragment"
+        android:name="com.example.cocktailapp.fragment.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.example.cocktailapp.Fragment.Info.InfoFragment"
+        android:name="com.example.cocktailapp.fragment.info.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
+
+
+    <fragment
+        android:id="@+id/cocktailDetailFragment"
+        android:name="com.example.cocktailapp.fragment.CocktailDetailFragment"
+        android:label="fragment_cocktail_detail">
+        <argument
+            android:name="selectedCocktail"
+            app:argType="com.example.cocktailapp.model.Cocktail"
+        />
+    </fragment>
 </navigation>
