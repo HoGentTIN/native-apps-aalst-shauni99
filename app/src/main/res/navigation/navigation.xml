@@ -42,7 +42,7 @@
 
     <fragment
         android:id="@+id/cocktailDetailFragment"
-        android:name="com.example.cocktailapp.fragment.CocktailDetailFragment"
+        android:name="com.example.cocktailapp.fragment.detail.CocktailDetailFragment"
         android:label="fragment_cocktail_detail">
         <argument
             android:name="selectedCocktail"

@@ -6,6 +6,20 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_using">Share it</string>
+    <string name="send_email_using">send mail</string>
+    <string name="AboutTitle">About</string>
+    <string name="AboutSubtitle">Want to know what this is?</string>
+    <string name="About">This is a cocktail application made by Shauni Vansteyvoort.</string>
+    <string name="ShareTitle">Share</string>
+    <string name="ShareSubtitle">Want to share this application?</string>
+    <string name="Share">Share this application.</string>
+    <string name="ContactTitle">Contact</string>
+    <string name="ContactSubtitle">Want to contact the developer?</string>
+    <string name="Contact">Send the developer an email</string>
+    <string name="Exit">Exit</string>
+ <string name="AppName">Cocktail app</string>
+    <string name="DOWNLOAD_URL">https://github.com/HoGentTIN/native-apps-aalst-shauni99</string> /<!-- nog aan te passen -->
 
 
 </resources>

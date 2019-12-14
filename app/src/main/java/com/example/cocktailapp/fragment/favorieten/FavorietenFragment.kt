@@ -19,6 +19,7 @@ class FavorietenFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        activity?.setTitle("My favourites")
         // Inflate the layout for this fragment
         val binding: FragmentFavorietenBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_favorieten, container, false)

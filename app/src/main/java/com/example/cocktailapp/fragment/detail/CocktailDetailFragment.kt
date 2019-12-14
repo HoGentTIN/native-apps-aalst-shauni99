@@ -1,4 +1,4 @@
-package com.example.cocktailapp.fragment
+package com.example.cocktailapp.fragment.detail
 
 
 import android.os.Bundle
@@ -18,6 +18,7 @@ class CocktailDetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        activity?.setTitle("Cocktail details")
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_cocktail_detail, container, false)
     }
