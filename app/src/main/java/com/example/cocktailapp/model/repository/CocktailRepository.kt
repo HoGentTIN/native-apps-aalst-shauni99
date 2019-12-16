@@ -49,7 +49,6 @@ class CocktailRepository(context: Context) : ICocktailRepository {
         try {
             return cocktailService.getAlcoholicCocktails().drinks!!
         } catch (e: Exception) {
-            Log.e("Error", e.message)
         }
         return listOf()
     }

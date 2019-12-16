@@ -63,13 +63,13 @@ class InfoFragment : Fragment() {
                 }
                 startActivity(Intent.createChooser(i, getString(R.string.share_using)))
             }
+
             Action.CONTACT -> {
                 val i = Intent(Intent.ACTION_SENDTO).apply {
-                    data = Uri.parse("Mail to shaunivansteyvoort@gmail.com")
-                    putExtra(Intent.EXTRA_SUBJECT, R.string.AppName)
+                    data = Uri.parse("mailto: shaunivansteyvoort@gmail.com")
+                    putExtra(Intent.EXTRA_SUBJECT, "Cocktail App")
                 }
                 startActivity(Intent.createChooser(i, getString(R.string.send_email_using)))
-            }
         }
     }
-}
+} }
