@@ -30,8 +30,10 @@ class CocktailRepository(context: Context) : ICocktailRepository {
         return cocktailDao.getCocktailByName(strDrink)
     }
 
+
+
     override suspend fun getCocktailById(idDrink: String): Cocktail? {
-        return cocktailService.getCocktailById(idDrink)
+        return cocktailService.getCocktailById(idDrink).drinks?.first()
     }
 
     override suspend fun ensureDelete() {
