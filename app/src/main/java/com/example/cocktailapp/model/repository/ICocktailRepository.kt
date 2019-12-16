@@ -12,7 +12,7 @@ interface ICocktailRepository {
 
     suspend fun ensureDelete()
 
-    suspend fun getById(idDrink: String): Cocktail?
+    suspend fun getCocktailById(idDrink: String): Cocktail?
 
     suspend fun getByName(strDrink: String): Cocktail?
 

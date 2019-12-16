@@ -24,4 +24,6 @@ data class Cocktail(
     var strCategory: String? = "",
     @ColumnInfo(name = "glass")
     var strGlass: String? = ""
+
+
 ) : Parcelable

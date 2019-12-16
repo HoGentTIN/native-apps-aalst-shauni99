@@ -17,6 +17,8 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<Cocktail>?) {
 
 
 
+
+
 /**
  * Uses the Glide library to load an image by URL into an [ImageView]
  */

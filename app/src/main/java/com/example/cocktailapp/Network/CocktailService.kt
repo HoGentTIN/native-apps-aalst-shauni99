@@ -4,6 +4,7 @@ import com.example.cocktailapp.model.Cocktail
 import com.example.cocktailapp.model.responses.CocktailResponse
 import retrofit2.http.GET
 import retrofit2.http.Headers
+import retrofit2.http.Path
 import retrofit2.http.QueryMap
 
 interface CocktailService {
@@ -17,6 +18,6 @@ interface CocktailService {
    suspend fun getNonAlcoholicCocktails(): CocktailResponse
 
     @Headers("Content-Type: application/json")
-    @GET("lookup.php?i={idDrink}")
-    suspend fun getMovieById(@QueryMap hashMap: HashMap<String, String> = HashMap()): Cocktail
+    @GET("lookup.php")
+    suspend fun getCocktailById(@Path("idDrink") id:String): Cocktail
 }

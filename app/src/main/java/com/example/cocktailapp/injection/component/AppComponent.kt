@@ -1,6 +1,7 @@
 package com.example.cocktailapp.injection.component
 
 import com.example.cocktailapp.App
+import com.example.cocktailapp.fragment.detail.CocktailDetailViewModel
 import com.example.cocktailapp.fragment.home.HomeViewModel
 import com.example.cocktailapp.fragment.info.InfoViewModel
 import com.example.cocktailapp.fragment.search.SearchViewModel
@@ -21,6 +22,7 @@ interface AppComponent {
     fun inject(homeViewModel: HomeViewModel)
     fun inject(infoViewModel: InfoViewModel)
     fun inject(searchViewModel: SearchViewModel)
+    fun inject(cocktailDetailViewModel: CocktailDetailViewModel)
 
     /**
      * Builder om de subcomponenten toe te voegen.
