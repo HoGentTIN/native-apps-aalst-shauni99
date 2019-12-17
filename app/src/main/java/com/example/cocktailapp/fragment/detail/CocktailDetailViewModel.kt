@@ -9,6 +9,7 @@ import com.example.cocktailapp.App
 import com.example.cocktailapp.model.Cocktail
 import com.example.cocktailapp.model.repository.ICocktailRepository
 import kotlinx.coroutines.launch
+import org.json.JSONObject
 import javax.inject.Inject
 
 class CocktailDetailViewModel(cocktail: Cocktail, app: Application) : AndroidViewModel(app) {
@@ -39,4 +40,4 @@ class CocktailDetailViewModel(cocktail: Cocktail, app: Application) : AndroidVie
         _selectedCocktail.value = cocktail
     }
 
-}
+   }

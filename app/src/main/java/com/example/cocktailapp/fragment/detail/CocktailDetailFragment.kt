@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isInvisible
 import androidx.lifecycle.ViewModelProviders
 
 import com.example.cocktailapp.R
@@ -29,6 +30,8 @@ class CocktailDetailFragment : Fragment() {
         binding.viewModel = ViewModelProviders.of(
             this, viewModelFactory
         ).get(CocktailDetailViewModel::class.java)
+
+
 
   return binding.root
     }
