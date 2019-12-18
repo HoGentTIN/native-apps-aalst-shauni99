@@ -32,6 +32,7 @@ class CocktailDetailViewModel(cocktail: Cocktail, app: Application) : AndroidVie
     }
 
 
+
     val selectedCocktail: LiveData<Cocktail>
         get() = _selectedCocktail
 

@@ -6,17 +6,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isInvisible
-import androidx.lifecycle.ViewModelProviders
 
-import com.example.cocktailapp.R
+import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.viewModelScope
+import com.example.cocktailapp.adapter.CocktailAdapter
+
+
 import com.example.cocktailapp.databinding.FragmentCocktailDetailBinding
+import com.google.android.material.appbar.AppBarLayout
+
+import com.google.android.material.appbar.CollapsingToolbarLayout
+import kotlinx.coroutines.launch
+
 
 /**
  * A simple [Fragment] subclass.
  */
 class CocktailDetailFragment : Fragment() {
-
+    private val viewModel: CocktailDetailViewModel by lazy {
+        ViewModelProviders.of(this).get(CocktailDetailViewModel::class.java)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,9 +40,36 @@ class CocktailDetailFragment : Fragment() {
             this, viewModelFactory
         ).get(CocktailDetailViewModel::class.java)
 
+        binding.viewModel = viewModel
 
 
-  return binding.root
+        val collapsingToolbarLayout =
+            binding.collapsingToolbar as CollapsingToolbarLayout
+        val appBarLayout = binding.appBar as AppBarLayout
+        appBarLayout.addOnOffsetChangedListener(object : AppBarLayout.OnOffsetChangedListener {
+            internal var isShow = true
+            internal var scrollRange = -1
+
+            override fun onOffsetChanged(appBarLayout: AppBarLayout, verticalOffset: Int) {
+                if (scrollRange == -1) {
+                    scrollRange = appBarLayout.totalScrollRange
+                }
+                if (scrollRange + verticalOffset == 0) {
+                    collapsingToolbarLayout.title = viewModel.cocktail.strDrink
+                    isShow = true
+                } else if (isShow) {
+                    collapsingToolbarLayout.title = " "
+                    //careful there should a space between double quote otherwise it wont work
+                    isShow = false
+                }
+            }
+        })
+        
+
+        return binding.root
+
     }
-
 }
+
+
+
