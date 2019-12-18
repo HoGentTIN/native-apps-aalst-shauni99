@@ -31,8 +31,6 @@ class CocktailAdapter(val onClickListener:OnClickListener):
         }
     }
 
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CocktailViewHolder{
         return CocktailViewHolder(CocktailGridItemBinding.inflate(LayoutInflater.from(parent.context)))
     }
@@ -48,13 +46,6 @@ class CocktailAdapter(val onClickListener:OnClickListener):
     class OnClickListener(val clickListener: (cocktail: Cocktail) -> Unit) {
 
         fun onClick(cocktail:Cocktail) = clickListener(cocktail)
-    }
-
-
-
-
-    class FavorieteCocktailListener(val clickListenerCocktail: (idDrink: String) -> Unit){
-        fun onClick(cocktail:Cocktail) = clickListenerCocktail(cocktail.idDrink)
     }
 
 }

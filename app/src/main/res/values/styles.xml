@@ -8,9 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.MaterialComponents.Button.TextButton">
-        <item name="cornerRadius">25dp</item>
-    </style>
+
 
 
     <style name="cardview">

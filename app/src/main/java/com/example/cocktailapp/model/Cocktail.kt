@@ -54,17 +54,7 @@ data class Cocktail(
     var strMeasure12: String? = "",
     var strMeasure13: String? = "",
     var strMeasure14: String? = "",
-    var strMeasure15: String? = "",
-    var favorieteCocktails: MutableList<Cocktail> = arrayListOf()
+    var strMeasure15: String? = ""
 
 
 ) : Parcelable
-{
-    fun addFavoriet(cocktail:Cocktail){
-        favorieteCocktails.add(cocktail)
-    }
-
-    fun removeFavoriet(cocktail:Cocktail){
-        favorieteCocktails.remove(cocktail)
-    }
-}

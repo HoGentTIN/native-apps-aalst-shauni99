@@ -64,7 +64,7 @@ class CocktailDetailFragment : Fragment() {
                 }
             }
         })
-
+        
 
         return binding.root
 
