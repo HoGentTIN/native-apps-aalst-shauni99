@@ -1,6 +1,7 @@
 package com.example.cocktailapp.database
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.cocktailapp.model.Cocktail
@@ -22,4 +23,6 @@ interface CocktailDatabaseDao {
 
     @Query("DELETE FROM cocktail_table")
     suspend fun nukeTable()
+
+
 }
