@@ -1,5 +1,7 @@
 package com.example.cocktailapp.injection.component
 
+import android.content.Context
+import android.net.ConnectivityManager
 import com.example.cocktailapp.App
 import com.example.cocktailapp.fragment.detail.CocktailDetailViewModel
 import com.example.cocktailapp.fragment.favorieten.FavorietenViewModel
@@ -25,6 +27,9 @@ interface AppComponent {
     fun inject(searchViewModel: SearchViewModel)
     fun inject(cocktailDetailViewModel: CocktailDetailViewModel)
     fun inject(favorietenViewModel: FavorietenViewModel)
+
+
+
 
     /**
      * Builder om de subcomponenten toe te voegen.

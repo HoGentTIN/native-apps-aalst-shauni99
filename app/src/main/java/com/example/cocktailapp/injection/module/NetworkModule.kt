@@ -1,6 +1,7 @@
 package com.example.cocktailapp.injection.module
 
 import android.content.Context
+import android.net.ConnectivityManager
 import com.example.cocktailapp.BuildConfig
 import com.example.cocktailapp.Network.CocktailService
 import com.google.gson.GsonBuilder
@@ -37,5 +38,10 @@ class NetworkModule(private val context: Context) {
             .addConverterFactory(GsonConverterFactory.create(gson))
             .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(Schedulers.io()))
             .build()
+    }
+
+    @Provides
+    fun provideConnectivityManager(context: Context): ConnectivityManager {
+        return context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
     }
 }

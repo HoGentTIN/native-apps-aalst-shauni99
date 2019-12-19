@@ -40,9 +40,9 @@ class HomeViewModel : ViewModel() {
 
     fun loadCocktails() {
         viewModelScope.launch {
+        _alcoholicCocktails.value = cocktailRepository.getAllAlcoholicCocktails(alcoholic)
 
-            var cocktails = cocktailRepository.loadAllAlcoholicCocktailsFromApi()
-            _alcoholicCocktails.value = cocktails
+
 
         }
     }
