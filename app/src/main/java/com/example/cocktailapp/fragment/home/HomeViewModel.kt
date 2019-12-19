@@ -41,9 +41,8 @@ class HomeViewModel : ViewModel() {
     fun loadCocktails() {
         viewModelScope.launch {
 
-
-                cocktailRepository.addCocktailsToDatabase(cocktailRepository.loadAllAlcoholicCocktailsFromApi())
-                _alcoholicCocktails.value = cocktailRepository.getAllAlcoholicCocktails(alcoholic);
+            var cocktails = cocktailRepository.loadAllAlcoholicCocktailsFromApi()
+            _alcoholicCocktails.value = cocktails
 
         }
     }
