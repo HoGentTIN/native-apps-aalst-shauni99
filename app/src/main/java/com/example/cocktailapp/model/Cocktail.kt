@@ -24,6 +24,8 @@ data class Cocktail(
     var strCategory: String? = "",
     @ColumnInfo(name = "glass")
     var strGlass: String? = "",
+    @ColumnInfo(name = "favorite")
+    var favorite: Boolean = false,
 
     var strIngredient1: String? = "",
     var strIngredient2: String? = "",

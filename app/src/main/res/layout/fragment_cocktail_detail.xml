@@ -98,7 +98,7 @@
                     android:background="?attr/selectableItemBackground"
                     android:contentDescription="@string/app_name"
                     android:padding="@dimen/dimen_10dp"
-                    android:src="@drawable/ic_favorite"
+                    android:src="@drawable/ic_favorite_border_black_24dp"
                     app:layout_constraintBottom_toBottomOf="@id/Alcoholic"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@id/Alcoholic" />

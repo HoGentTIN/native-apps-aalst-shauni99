@@ -6,13 +6,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.lifecycle.Observer
 
 import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.viewModelScope
+import com.example.cocktailapp.R
 import com.example.cocktailapp.adapter.CocktailAdapter
+import com.example.cocktailapp.database.CocktailDatabase
+import com.example.cocktailapp.database.CocktailDatabaseDao
 
 
 import com.example.cocktailapp.databinding.FragmentCocktailDetailBinding
+import com.example.cocktailapp.model.Cocktail
 import com.google.android.material.appbar.AppBarLayout
 
 import com.google.android.material.appbar.CollapsingToolbarLayout
@@ -31,6 +37,9 @@ class CocktailDetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+         val cocktailDatabase = CocktailDatabase.getInstance(requireContext())
+         val cocktailDao: CocktailDatabaseDao = cocktailDatabase.cocktailDao
+
         val application = requireNotNull(activity).application
         val binding = FragmentCocktailDetailBinding.inflate(inflater)
         binding.setLifecycleOwner(this)
@@ -64,12 +73,45 @@ class CocktailDetailFragment : Fragment() {
                 }
             }
         })
-        
+
+
+            if (viewModel.cocktail.favorite) {
+                binding.favorite.setImageResource(R.drawable.ic_favorite_black_24dp)
+            }
+
+            binding.favorite.setOnClickListener(View.OnClickListener {
+
+                if (!viewModel.cocktail.favorite) {
+                    Thread {
+                        cocktailDao.addToFavs(viewModel.cocktail.idDrink)
+                    }.start()
+                    viewModel.cocktail.favorite = true;
+                    binding.favorite.setImageResource(R.drawable.ic_favorite_black_24dp)
+                    Toast.makeText(
+                        it.context,
+                        cocktail.strDrink + "was added to favorites",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                } else {
+                    Thread {
+                        cocktailDao.removeFromFavs(viewModel.cocktail.idDrink)
+                    }.start()
+                    viewModel.cocktail.favorite = false;
+
+                    binding.favorite.setImageResource(R.drawable.ic_favorite_border_black_24dp)
+                    Toast.makeText(
+                        it.context,
+                        cocktail.strDrink + "was removed from favorites",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+
+            })
+
 
         return binding.root
 
     }
 }
-
 
 

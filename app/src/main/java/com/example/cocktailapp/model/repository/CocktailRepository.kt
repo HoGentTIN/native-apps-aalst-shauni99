@@ -7,6 +7,7 @@ import com.example.cocktailapp.database.CocktailDatabase
 import com.example.cocktailapp.database.CocktailDatabaseDao
 import com.example.cocktailapp.model.Cocktail
 import com.example.cocktailapp.Network.CocktailService
+import com.example.cocktailapp.model.Favorite
 import javax.inject.Inject
 
 class CocktailRepository(context: Context) : ICocktailRepository {
@@ -60,4 +61,20 @@ class CocktailRepository(context: Context) : ICocktailRepository {
                 cocktailDao.insert(it)
         }
     }
+
+
+
+
+
+    override suspend fun getFavs(): List<Favorite> {
+        return cocktailDao.getFavs()
+    }
+
+
+
+    override suspend fun isFavorite(favId: Int){
+        cocktailDao.isFavorite(favId)
+    }
+
+
 }

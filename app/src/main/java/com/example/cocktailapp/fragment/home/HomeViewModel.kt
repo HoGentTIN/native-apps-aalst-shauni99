@@ -15,6 +15,8 @@ class HomeViewModel : ViewModel() {
     @Inject
     lateinit var cocktailRepository: ICocktailRepository
 
+    var alcoholic = "Alcoholic"
+
     init {
         App.appComponent.inject(this)
         loadCocktails()
@@ -36,10 +38,13 @@ class HomeViewModel : ViewModel() {
 
 
 
-    fun loadCocktails(){
+    fun loadCocktails() {
         viewModelScope.launch {
-            var cocktails = cocktailRepository.loadAllAlcoholicCocktailsFromApi()
-            _alcoholicCocktails.value = cocktails
+
+
+                cocktailRepository.addCocktailsToDatabase(cocktailRepository.loadAllAlcoholicCocktailsFromApi())
+                _alcoholicCocktails.value = cocktailRepository.getAllAlcoholicCocktails(alcoholic);
+
         }
     }
 
@@ -51,5 +56,7 @@ class HomeViewModel : ViewModel() {
     fun displayCocktailDetailsComplete(cocktail:Cocktail){
         _navigateToSelectedCocktail.value = null
     }
+
+
 
 }
