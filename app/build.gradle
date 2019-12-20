@@ -53,7 +53,6 @@ allprojects {
         jcenter()
     }
 
-    apply from: "$rootDir/ktlint.gradle"
 }
 
 dependencies {
