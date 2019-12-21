@@ -58,5 +58,4 @@ data class Cocktail(
     var strMeasure14: String? = "",
     var strMeasure15: String? = ""
 
-
 ) : Parcelable

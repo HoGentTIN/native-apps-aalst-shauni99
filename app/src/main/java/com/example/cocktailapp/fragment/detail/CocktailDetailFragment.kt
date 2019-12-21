@@ -1,29 +1,18 @@
 package com.example.cocktailapp.fragment.detail
 
-
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.lifecycle.Observer
-
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
-import androidx.lifecycle.viewModelScope
 import com.example.cocktailapp.R
-import com.example.cocktailapp.adapter.CocktailAdapter
 import com.example.cocktailapp.database.CocktailDatabase
 import com.example.cocktailapp.database.CocktailDatabaseDao
-
-
 import com.example.cocktailapp.databinding.FragmentCocktailDetailBinding
-import com.example.cocktailapp.model.Cocktail
 import com.google.android.material.appbar.AppBarLayout
-
 import com.google.android.material.appbar.CollapsingToolbarLayout
-import kotlinx.coroutines.launch
-
 
 /**
  * A simple [Fragment] subclass.
@@ -34,7 +23,8 @@ class CocktailDetailFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
          val cocktailDatabase = CocktailDatabase.getInstance(requireContext())
@@ -50,7 +40,6 @@ class CocktailDetailFragment : Fragment() {
         ).get(CocktailDetailViewModel::class.java)
 
         binding.viewModel = viewModel
-
 
         val collapsingToolbarLayout =
             binding.collapsingToolbar as CollapsingToolbarLayout
@@ -68,12 +57,11 @@ class CocktailDetailFragment : Fragment() {
                     isShow = true
                 } else if (isShow) {
                     collapsingToolbarLayout.title = " "
-                    //careful there should a space between double quote otherwise it wont work
+                    // careful there should a space between double quote otherwise it wont work
                     isShow = false
                 }
             }
         })
-
 
             if (viewModel.cocktail.favorite) {
                 binding.favorite.setImageResource(R.drawable.ic_favorite_black_24dp)
@@ -85,33 +73,28 @@ class CocktailDetailFragment : Fragment() {
                     Thread {
                         cocktailDao.addToFavs(viewModel.cocktail.idDrink)
                     }.start()
-                    viewModel.cocktail.favorite = true;
+                    viewModel.cocktail.favorite = true
                     binding.favorite.setImageResource(R.drawable.ic_favorite_black_24dp)
                     Toast.makeText(
                         it.context,
-                        cocktail.strDrink + "was added to favorites",
+                        cocktail.strDrink + " was added to favorites",
                         Toast.LENGTH_SHORT
                     ).show()
                 } else {
                     Thread {
                         cocktailDao.removeFromFavs(viewModel.cocktail.idDrink)
                     }.start()
-                    viewModel.cocktail.favorite = false;
+                    viewModel.cocktail.favorite = false
 
                     binding.favorite.setImageResource(R.drawable.ic_favorite_border_black_24dp)
                     Toast.makeText(
                         it.context,
-                        cocktail.strDrink + "was removed from favorites",
+                        cocktail.strDrink + " was removed from favorites",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-
             })
 
-
         return binding.root
-
     }
 }
-
-

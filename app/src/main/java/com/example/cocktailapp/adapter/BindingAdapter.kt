@@ -8,16 +8,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.cocktailapp.model.Cocktail
 
-
 @BindingAdapter("listData")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<Cocktail>?) {
     val adapter = recyclerView.adapter as CocktailAdapter
     adapter.submitList(data)
 }
-
-
-
-
 
 /**
  * Uses the Glide library to load an image by URL into an [ImageView]

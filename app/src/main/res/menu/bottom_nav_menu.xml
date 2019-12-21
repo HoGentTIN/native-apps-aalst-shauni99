@@ -7,12 +7,8 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/empty" />
         <item
-            android:id="@+id/searchFragment"
-            android:icon="@drawable/ic_search_black_24dp"
-            android:title="@string/empty" />
-        <item
             android:id="@+id/favorietenFragment"
-            android:icon="@drawable/ic_favorite_border_black_24dp"
+            android:icon="@drawable/ic_favorite_border_black_24dp2"
             android:title="@string/empty" />
         <item
             android:id="@+id/infoFragment"

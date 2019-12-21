@@ -7,8 +7,8 @@ import androidx.lifecycle.viewModelScope
 import com.example.cocktailapp.App
 import com.example.cocktailapp.model.Cocktail
 import com.example.cocktailapp.model.repository.ICocktailRepository
-import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlinx.coroutines.launch
 
 class HomeViewModel : ViewModel() {
 
@@ -34,28 +34,17 @@ class HomeViewModel : ViewModel() {
     val navigateToSelectedCocktail: LiveData<Cocktail>
         get() = _navigateToSelectedCocktail
 
-
-
-
-
     fun loadCocktails() {
         viewModelScope.launch {
         _alcoholicCocktails.value = cocktailRepository.getAllAlcoholicCocktails(alcoholic)
-
-
-
         }
     }
 
-   fun displayCocktailDetails(cocktail:Cocktail){
+   fun displayCocktailDetails(cocktail: Cocktail) {
        _navigateToSelectedCocktail.value = cocktail
    }
 
-
-    fun displayCocktailDetailsComplete(cocktail:Cocktail){
+    fun displayCocktailDetailsComplete(cocktail: Cocktail) {
         _navigateToSelectedCocktail.value = null
     }
-
-
-
 }

@@ -5,12 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.cocktailapp.model.Cocktail
-import com.example.cocktailapp.model.Favorite
 
-@Database(entities = [Cocktail::class,Favorite::class], version = 3, exportSchema = false)
+@Database(entities = [Cocktail::class], version = 4, exportSchema = false)
 abstract class CocktailDatabase : RoomDatabase() {
     abstract val cocktailDao: CocktailDatabaseDao
-
 
     companion object {
         @Volatile

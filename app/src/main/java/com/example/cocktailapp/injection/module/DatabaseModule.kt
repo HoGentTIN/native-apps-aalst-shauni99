@@ -2,7 +2,6 @@ package com.example.cocktailapp.injection.module
 
 import android.app.Application
 import android.content.Context
-import android.net.ConnectivityManager
 import com.example.cocktailapp.model.repository.CocktailRepository
 import com.example.cocktailapp.model.repository.ICocktailRepository
 import dagger.Module

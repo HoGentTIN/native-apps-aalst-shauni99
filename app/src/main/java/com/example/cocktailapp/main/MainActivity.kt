@@ -2,8 +2,6 @@ package com.example.cocktailapp.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.cocktailapp.R
@@ -20,7 +18,5 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.myNavHostFragment) as NavHostFragment
 
         bottom_nav_view.setupWithNavController(navController = navHostFragment.navController)
-
-
     }
 }

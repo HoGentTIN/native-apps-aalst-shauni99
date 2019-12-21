@@ -14,9 +14,6 @@
             android:id="@+id/action_homeFragment_to_favorietenFragment"
             app:destination="@id/favorietenFragment" />
         <action
-            android:id="@+id/action_myNavHostFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
-        <action
             android:id="@+id/action_myNavHostFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
         <action
@@ -28,11 +25,6 @@
         android:name="com.example.cocktailapp.fragment.favorieten.FavorietenFragment"
         android:label="fragment_favorieten"
         tools:layout="@layout/fragment_favorieten" />
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.example.cocktailapp.fragment.search.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.cocktailapp.fragment.info.InfoFragment"

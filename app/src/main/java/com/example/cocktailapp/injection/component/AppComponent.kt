@@ -1,13 +1,11 @@
 package com.example.cocktailapp.injection.component
 
-import android.content.Context
-import android.net.ConnectivityManager
 import com.example.cocktailapp.App
 import com.example.cocktailapp.fragment.detail.CocktailDetailViewModel
 import com.example.cocktailapp.fragment.favorieten.FavorietenViewModel
 import com.example.cocktailapp.fragment.home.HomeViewModel
 import com.example.cocktailapp.fragment.info.InfoViewModel
-import com.example.cocktailapp.fragment.search.SearchViewModel
+
 import com.example.cocktailapp.injection.module.DatabaseModule
 import com.example.cocktailapp.injection.module.NetworkModule
 import com.example.cocktailapp.model.repository.CocktailRepository
@@ -24,12 +22,9 @@ interface AppComponent {
 
     fun inject(homeViewModel: HomeViewModel)
     fun inject(infoViewModel: InfoViewModel)
-    fun inject(searchViewModel: SearchViewModel)
+
     fun inject(cocktailDetailViewModel: CocktailDetailViewModel)
     fun inject(favorietenViewModel: FavorietenViewModel)
-
-
-
 
     /**
      * Builder om de subcomponenten toe te voegen.

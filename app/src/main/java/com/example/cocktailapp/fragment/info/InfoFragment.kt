@@ -13,13 +13,11 @@ import androidx.lifecycle.ViewModelProviders
 import com.example.cocktailapp.R
 import com.example.cocktailapp.databinding.FragmentInfoBinding
 import com.example.cocktailapp.fragment.Action
-import com.example.cocktailapp.fragment.home.HomeViewModel
 
 /**
  * A simple [Fragment] subclass.
  */
 class InfoFragment : Fragment() {
-
 
     private val viewModel: InfoViewModel by lazy {
         ViewModelProviders.of(this).get(InfoViewModel::class.java)
@@ -35,17 +33,11 @@ class InfoFragment : Fragment() {
         val binding: FragmentInfoBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_info, container, false)
 
-
         binding.card.setOnClickListener(clickListenerInfoPage(Action.ABOUT))
         binding.card2.setOnClickListener(clickListenerInfoPage(Action.SHARE))
         binding.card3.setOnClickListener(clickListenerInfoPage(Action.CONTACT))
 
-
         return binding.root
-
-
-
-
     }
 
     private fun clickListenerInfoPage(a: Action): View.OnClickListener = View.OnClickListener {

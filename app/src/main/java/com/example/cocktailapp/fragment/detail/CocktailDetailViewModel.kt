@@ -8,9 +8,8 @@ import androidx.lifecycle.viewModelScope
 import com.example.cocktailapp.App
 import com.example.cocktailapp.model.Cocktail
 import com.example.cocktailapp.model.repository.ICocktailRepository
-import kotlinx.coroutines.launch
-import org.json.JSONObject
 import javax.inject.Inject
+import kotlinx.coroutines.launch
 
 class CocktailDetailViewModel(cocktail: Cocktail, app: Application) : AndroidViewModel(app) {
     @Inject
@@ -24,21 +23,17 @@ class CocktailDetailViewModel(cocktail: Cocktail, app: Application) : AndroidVie
 
     private val _selectedCocktail = MutableLiveData<Cocktail>()
 
-    fun loadCocktailById(){
+    fun loadCocktailById() {
         viewModelScope.launch {
             var cocktails = cocktailRepository.getCocktailById(cocktail.idDrink)
             _selectedCocktail.value = cocktails
         }
     }
 
-
-
     val selectedCocktail: LiveData<Cocktail>
         get() = _selectedCocktail
-
 
     init {
         _selectedCocktail.value = cocktail
     }
-
    }

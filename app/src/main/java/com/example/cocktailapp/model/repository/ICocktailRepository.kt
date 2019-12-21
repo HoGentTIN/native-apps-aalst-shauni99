@@ -1,7 +1,6 @@
 package com.example.cocktailapp.model.repository
 
 import com.example.cocktailapp.model.Cocktail
-import com.example.cocktailapp.model.Favorite
 
 interface ICocktailRepository {
 
@@ -18,8 +17,4 @@ interface ICocktailRepository {
     suspend fun getByName(strDrink: String): Cocktail?
 
     suspend fun insert(cocktail: Cocktail)
-
-    suspend fun getFavs(): List<Favorite>
-
-    suspend fun isFavorite(favId: Int)
 }
