@@ -10,6 +10,8 @@ interface ICocktailRepository {
 
     suspend fun addCocktailsToDatabase(cocktails: List<Cocktail>)
 
+    suspend fun getFavoriteCocktails() : List<Cocktail>
+
     suspend fun ensureDelete()
 
     suspend fun getCocktailById(idDrink: String): Cocktail?

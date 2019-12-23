@@ -6,7 +6,7 @@
     <data>
         <variable
             name="cocktail"
-            type="com.example.cocktailapp.model.Favorite" />
+            type="com.example.cocktailapp.model.Cocktail" />
 
 
 
@@ -27,7 +27,7 @@
             app:layout_constraintBottom_toBottomOf="@id/separator"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            imageUrl="@{cocktail.drinkPhoto}"
+            imageUrl="@{cocktail.strDrinkThumb}"
              />
 
         <TextView
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:text="@{cocktail.drinkName}"
+            android:text="@{cocktail.strDrink}"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/cocktail_foto"
             app:layout_constraintStart_toEndOf="@+id/cocktail_foto"

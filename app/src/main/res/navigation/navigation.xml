@@ -24,7 +24,11 @@
         android:id="@+id/favorietenFragment"
         android:name="com.example.cocktailapp.fragment.favorieten.FavorietenFragment"
         android:label="fragment_favorieten"
-        tools:layout="@layout/fragment_favorieten" />
+        tools:layout="@layout/fragment_favorieten">
+        <action
+            android:id="@+id/showCocktailDetail"
+            app:destination="@id/cocktailDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.cocktailapp.fragment.info.InfoFragment"
@@ -38,7 +42,6 @@
         android:label="fragment_cocktail_detail">
         <argument
             android:name="selectedCocktail"
-            app:argType="com.example.cocktailapp.model.Cocktail"
-        />
+            app:argType="com.example.cocktailapp.model.Cocktail" />
     </fragment>
 </navigation>

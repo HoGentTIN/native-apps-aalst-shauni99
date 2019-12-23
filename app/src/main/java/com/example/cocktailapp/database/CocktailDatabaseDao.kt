@@ -24,6 +24,8 @@ interface CocktailDatabaseDao {
     @Query("DELETE FROM cocktail_table")
     suspend fun nukeTable()
 
+    @Query("SELECT * FROM cocktail_table WHERE favorite")
+    suspend fun getFavoriteCocktails() : List<Cocktail>
 
     @Query("UPDATE cocktail_table SET favorite = 1 where idDrink = :idDrink")
     fun addToFavs(idDrink: String)

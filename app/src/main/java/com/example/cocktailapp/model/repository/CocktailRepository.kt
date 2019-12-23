@@ -47,6 +47,10 @@ class CocktailRepository(context: Context) : ICocktailRepository {
         cocktailDao.nukeTable()
     }
 
+    override suspend fun getFavoriteCocktails() : List<Cocktail>{
+        return cocktailDao.getFavoriteCocktails()
+    }
+
     override suspend fun getAllAlcoholicCocktails(alcoholic: String): List<Cocktail> {
         if (connectedToInternet()) {
             val cocktail = cocktailService.getAlcoholicCocktails()
