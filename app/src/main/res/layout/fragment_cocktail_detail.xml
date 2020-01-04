@@ -84,7 +84,7 @@
                     android:paddingEnd="@dimen/dimen_10dp"
                     android:text="@{viewModel.selectedCocktail.strAlcoholic}"
                     android:textColor="@android:color/white"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold|italic"
                     app:layout_constraintBottom_toTopOf="@id/InstructionsTitle"
                     app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +108,7 @@
                     android:id="@+id/InstructionsTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="@dimen/dimen_24dp"
                     android:padding="@dimen/dimen_3dp"
                     android:text="@string/instructions"
                     android:textColor="@color/colorPrimaryDark"
@@ -131,7 +131,7 @@
                     android:id="@+id/IngredientsTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="@dimen/dimen_24dp"
                     android:padding="@dimen/dimen_3dp"
                     android:text="@string/ingredients"
                     android:textColor="@color/colorPrimaryDark"
@@ -142,9 +142,9 @@
 
                 <TextView
                     android:id="@+id/ingredient1"
-                    android:layout_width="204dp"
+                    android:layout_width="@dimen/dimen_204dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient1}"
                     app:layout_constraintEnd_toStartOf="@+id/measure1"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -153,9 +153,9 @@
 
                 <TextView
                     android:id="@+id/ingredient2"
-                    android:layout_width="204dp"
+                    android:layout_width="@dimen/dimen_204dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
+                    android:layout_marginStart="@dimen/dimen_6dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient2}"
                     app:layout_constraintEnd_toStartOf="@+id/measure2"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -164,9 +164,9 @@
 
                 <TextView
                     android:id="@+id/ingredient3"
-                    android:layout_width="202dp"
+                    android:layout_width="@dimen/dimen_202dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient3}"
                     app:layout_constraintEnd_toStartOf="@+id/measure3"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -175,9 +175,9 @@
 
                 <TextView
                     android:id="@+id/ingredient4"
-                    android:layout_width="203dp"
+                    android:layout_width="@dimen/dimen_203dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient4}"
                     app:layout_constraintEnd_toStartOf="@+id/measure4"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -186,9 +186,9 @@
 
                 <TextView
                     android:id="@+id/ingredient5"
-                    android:layout_width="202dp"
+                    android:layout_width="@dimen/dimen_202dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient5}"
                     app:layout_constraintEnd_toStartOf="@+id/measure5"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -197,9 +197,9 @@
 
                 <TextView
                     android:id="@+id/ingredient6"
-                    android:layout_width="203dp"
+                    android:layout_width="@dimen/dimen_203dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient6}"
                     app:layout_constraintEnd_toStartOf="@+id/measure6"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -208,9 +208,9 @@
 
                 <TextView
                     android:id="@+id/ingredient7"
-                    android:layout_width="202dp"
+                    android:layout_width="@dimen/dimen_202dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient7}"
                     app:layout_constraintEnd_toStartOf="@+id/measure7"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -219,9 +219,9 @@
 
                 <TextView
                     android:id="@+id/ingredient8"
-                    android:layout_width="202dp"
+                    android:layout_width="@dimen/dimen_202dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient8}"
                     app:layout_constraintEnd_toStartOf="@+id/measure8"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -230,9 +230,9 @@
 
                 <TextView
                     android:id="@+id/ingredient9"
-                    android:layout_width="202dp"
+                    android:layout_width="@dimen/dimen_202dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient9}"
                     app:layout_constraintEnd_toStartOf="@+id/measure9"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -241,9 +241,9 @@
 
                 <TextView
                     android:id="@+id/ingredient10"
-                    android:layout_width="202dp"
+                    android:layout_width="@dimen/dimen_202dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient10}"
                     app:layout_constraintEnd_toStartOf="@+id/measure10"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -252,9 +252,9 @@
 
                 <TextView
                     android:id="@+id/ingredient11"
-                    android:layout_width="203dp"
+                    android:layout_width="@dimen/dimen_203dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient11}"
                     app:layout_constraintEnd_toStartOf="@+id/measure11"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -263,9 +263,9 @@
 
                 <TextView
                     android:id="@+id/ingredient12"
-                    android:layout_width="203dp"
+                    android:layout_width="@dimen/dimen_203dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient12}"
                     app:layout_constraintEnd_toStartOf="@+id/measure12"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -274,9 +274,9 @@
 
                 <TextView
                     android:id="@+id/ingredient13"
-                    android:layout_width="203dp"
+                    android:layout_width="@dimen/dimen_203dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient13}"
                     app:layout_constraintEnd_toStartOf="@+id/measure13"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -285,9 +285,9 @@
 
                 <TextView
                     android:id="@+id/ingredient14"
-                    android:layout_width="203dp"
+                    android:layout_width="@dimen/dimen_203dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient14}"
                     app:layout_constraintEnd_toStartOf="@+id/measure14"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -296,9 +296,9 @@
 
                 <TextView
                     android:id="@+id/ingredient15"
-                    android:layout_width="204dp"
+                    android:layout_width="@dimen/dimen_204dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strIngredient15}"
                     app:layout_constraintEnd_toStartOf="@+id/measure15"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -308,8 +308,8 @@
 
                 <TextView
                     android:id="@+id/measure1"
-                    android:layout_width="204dp"
-                    android:layout_height="27dp"
+                    android:layout_width="@dimen/dimen_204dp"
+                    android:layout_height="@dimen/dimen_27dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure1}"
                     app:layout_constraintBottom_toBottomOf="@+id/ingredient1"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -318,9 +318,9 @@
 
                 <TextView
                     android:id="@+id/measure2"
-                    android:layout_width="204dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_204dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure2}"
                     app:layout_constraintBottom_toBottomOf="@+id/ingredient2"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -330,9 +330,9 @@
 
                 <TextView
                     android:id="@+id/measure3"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure3}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -341,9 +341,9 @@
 
                 <TextView
                     android:id="@+id/measure4"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure4}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -352,9 +352,9 @@
 
                 <TextView
                     android:id="@+id/measure5"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure5}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -363,9 +363,9 @@
 
                 <TextView
                     android:id="@+id/measure6"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure6}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -374,9 +374,9 @@
 
                 <TextView
                     android:id="@+id/measure7"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure7}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -385,9 +385,9 @@
 
                 <TextView
                     android:id="@+id/measure8"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure8}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -396,9 +396,9 @@
 
                 <TextView
                     android:id="@+id/measure9"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure9}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -407,9 +407,9 @@
 
                 <TextView
                     android:id="@+id/measure10"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure10}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -418,9 +418,9 @@
 
                 <TextView
                     android:id="@+id/measure11"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure11}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -429,9 +429,9 @@
 
                 <TextView
                     android:id="@+id/measure12"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure12}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -441,9 +441,9 @@
 
                 <TextView
                     android:id="@+id/measure13"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure13}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -452,9 +452,9 @@
 
                 <TextView
                     android:id="@+id/measure14"
-                    android:layout_width="203dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_203dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure14}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -463,9 +463,9 @@
 
                 <TextView
                     android:id="@+id/measure15"
-                    android:layout_width="204dp"
-                    android:layout_height="27dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_width="@dimen/dimen_204dp"
+                    android:layout_height="@dimen/dimen_27dp"
+                    android:layout_marginStart="@dimen/dimen_5dp"
                     android:text="@{viewModel.selectedCocktail.strMeasure15}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"

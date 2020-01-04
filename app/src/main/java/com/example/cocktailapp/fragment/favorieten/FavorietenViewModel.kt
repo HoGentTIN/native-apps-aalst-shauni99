@@ -6,11 +6,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.cocktailapp.App
-import com.example.cocktailapp.database.CocktailDatabaseDao
 import com.example.cocktailapp.model.Cocktail
 import com.example.cocktailapp.model.repository.ICocktailRepository
-import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlinx.coroutines.launch
 
 class FavorietenViewModel : ViewModel() {
 
@@ -24,16 +23,15 @@ class FavorietenViewModel : ViewModel() {
 
     private val _favoriteCocktails = MutableLiveData<List<Cocktail>>()
     val favoriteCocktails: LiveData<List<Cocktail>>
-        get()= _favoriteCocktails
+        get() = _favoriteCocktails
 
     private val _navigateToSelectedCocktail = MutableLiveData<Cocktail>()
     val navigateToSelectedCocktail: LiveData<Cocktail>
         get() = _navigateToSelectedCocktail
 
-
-    private fun getFavoriteCocktails(){
+    private fun getFavoriteCocktails() {
         viewModelScope.launch {
-            var cocktails= cocktailRepository.getFavoriteCocktails()
+            var cocktails = cocktailRepository.getFavoriteCocktails()
             _favoriteCocktails.value = cocktails
             Log.d("favorieten", cocktails.size.toString())
         }
@@ -46,5 +44,4 @@ class FavorietenViewModel : ViewModel() {
     fun displayCocktailDetailsComplete(cocktail: Cocktail) {
         _navigateToSelectedCocktail.value = null
     }
-
 }

@@ -25,13 +25,11 @@ interface CocktailDatabaseDao {
     suspend fun nukeTable()
 
     @Query("SELECT * FROM cocktail_table WHERE favorite")
-    suspend fun getFavoriteCocktails() : List<Cocktail>
+    suspend fun getFavoriteCocktails(): List<Cocktail>
 
     @Query("UPDATE cocktail_table SET favorite = 1 where idDrink = :idDrink")
     fun addToFavs(idDrink: String)
 
     @Query("UPDATE cocktail_table SET favorite = 0 where idDrink = :idDrink")
     fun removeFromFavs(idDrink: String)
-
-
 }

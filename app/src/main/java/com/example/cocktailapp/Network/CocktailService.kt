@@ -9,11 +9,7 @@ interface CocktailService {
 
     @Headers("Content-Type: application/json")
     @GET("filter.php?a=Alcoholic")
-   suspend fun getAlcoholicCocktails(): CocktailResponse
-
-    @Headers("Content-Type: application/json")
-    @GET("filter.php?a=Non_Alcoholic")
-   suspend fun getNonAlcoholicCocktails(): CocktailResponse
+    suspend fun getAlcoholicCocktails(): CocktailResponse
 
     @Headers("Content-Type: application/json")
     @GET("lookup.php?")

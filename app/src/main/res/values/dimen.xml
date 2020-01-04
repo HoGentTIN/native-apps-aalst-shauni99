@@ -6,4 +6,12 @@
     <dimen name="dimen_3dp">3dp</dimen>
     <dimen name="dimen_0dp">0dp</dimen>
     <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_202dp">202dp</dimen>
+    <dimen name="dimen_203dp">203dp</dimen>
+    <dimen name="dimen_204dp">204dp</dimen>
+    <dimen name="dimen_6dp">5dp</dimen>
+    <dimen name="dimen_27dp">27dp</dimen>
+    <dimen name="dimen_145dp">145dp</dimen>
+    <dimen name="dimen_9dp">9dp</dimen>
 </resources>

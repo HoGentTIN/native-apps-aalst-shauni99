@@ -47,7 +47,7 @@ class CocktailRepository(context: Context) : ICocktailRepository {
         cocktailDao.nukeTable()
     }
 
-    override suspend fun getFavoriteCocktails() : List<Cocktail>{
+    override suspend fun getFavoriteCocktails(): List<Cocktail> {
         return cocktailDao.getFavoriteCocktails()
     }
 
@@ -77,7 +77,6 @@ class CocktailRepository(context: Context) : ICocktailRepository {
 
     // toevoegen cocktails aan Dao
     override suspend fun addCocktailsToDatabase(cocktails: List<Cocktail>) {
-
 
             cocktails.forEach {
 

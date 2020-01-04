@@ -24,7 +24,7 @@ class HomeViewModel : ViewModel() {
 
     private val _alcoholicCocktails = MutableLiveData<List<Cocktail>>()
     val alcoholicCocktails: LiveData<List<Cocktail>>
-    get() = _alcoholicCocktails
+        get() = _alcoholicCocktails
 
     private val _nonAlcoholicCocktails = MutableLiveData<List<Cocktail>>()
     val nonAlcoholicCocktails: LiveData<List<Cocktail>>
@@ -36,13 +36,13 @@ class HomeViewModel : ViewModel() {
 
     fun loadCocktails() {
         viewModelScope.launch {
-        _alcoholicCocktails.value = cocktailRepository.getAllAlcoholicCocktails(alcoholic)
+            _alcoholicCocktails.value = cocktailRepository.getAllAlcoholicCocktails(alcoholic)
         }
     }
 
-   fun displayCocktailDetails(cocktail: Cocktail) {
-       _navigateToSelectedCocktail.value = cocktail
-   }
+    fun displayCocktailDetails(cocktail: Cocktail) {
+        _navigateToSelectedCocktail.value = cocktail
+    }
 
     fun displayCocktailDetailsComplete(cocktail: Cocktail) {
         _navigateToSelectedCocktail.value = null

@@ -5,7 +5,6 @@ import com.example.cocktailapp.fragment.detail.CocktailDetailViewModel
 import com.example.cocktailapp.fragment.favorieten.FavorietenViewModel
 import com.example.cocktailapp.fragment.home.HomeViewModel
 import com.example.cocktailapp.fragment.info.InfoViewModel
-
 import com.example.cocktailapp.injection.module.DatabaseModule
 import com.example.cocktailapp.injection.module.NetworkModule
 import com.example.cocktailapp.model.repository.CocktailRepository

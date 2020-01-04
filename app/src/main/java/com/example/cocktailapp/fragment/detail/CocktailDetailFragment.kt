@@ -27,8 +27,8 @@ class CocktailDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-         val cocktailDatabase = CocktailDatabase.getInstance(requireContext())
-         val cocktailDao: CocktailDatabaseDao = cocktailDatabase.cocktailDao
+        val cocktailDatabase = CocktailDatabase.getInstance(requireContext())
+        val cocktailDao: CocktailDatabaseDao = cocktailDatabase.cocktailDao
 
         val application = requireNotNull(activity).application
         val binding = FragmentCocktailDetailBinding.inflate(inflater)
@@ -63,37 +63,37 @@ class CocktailDetailFragment : Fragment() {
             }
         })
 
-            if (viewModel.cocktail.favorite) {
+        if (viewModel.cocktail.favorite) {
+            binding.favorite.setImageResource(R.drawable.ic_favorite_black_24dp)
+        }
+
+        binding.favorite.setOnClickListener(View.OnClickListener {
+
+            if (!viewModel.cocktail.favorite) {
+                Thread {
+                    cocktailDao.addToFavs(viewModel.cocktail.idDrink)
+                }.start()
+                viewModel.cocktail.favorite = true
                 binding.favorite.setImageResource(R.drawable.ic_favorite_black_24dp)
+                Toast.makeText(
+                    it.context,
+                    cocktail.strDrink + " was added to favorites",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                Thread {
+                    cocktailDao.removeFromFavs(viewModel.cocktail.idDrink)
+                }.start()
+                viewModel.cocktail.favorite = false
+
+                binding.favorite.setImageResource(R.drawable.ic_favorite_border_black_24dp)
+                Toast.makeText(
+                    it.context,
+                    cocktail.strDrink + " was removed from favorites",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
-
-            binding.favorite.setOnClickListener(View.OnClickListener {
-
-                if (!viewModel.cocktail.favorite) {
-                    Thread {
-                        cocktailDao.addToFavs(viewModel.cocktail.idDrink)
-                    }.start()
-                    viewModel.cocktail.favorite = true
-                    binding.favorite.setImageResource(R.drawable.ic_favorite_black_24dp)
-                    Toast.makeText(
-                        it.context,
-                        cocktail.strDrink + " was added to favorites",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                } else {
-                    Thread {
-                        cocktailDao.removeFromFavs(viewModel.cocktail.idDrink)
-                    }.start()
-                    viewModel.cocktail.favorite = false
-
-                    binding.favorite.setImageResource(R.drawable.ic_favorite_border_black_24dp)
-                    Toast.makeText(
-                        it.context,
-                        cocktail.strDrink + " was removed from favorites",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            })
+        })
 
         return binding.root
     }

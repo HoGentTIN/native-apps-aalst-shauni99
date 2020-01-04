@@ -1,6 +1,5 @@
 package com.example.cocktailapp.main
 
-
 import android.view.View
 import android.view.ViewGroup
 import androidx.test.espresso.Espresso.onView
@@ -164,7 +163,8 @@ class CheckCorrectInstructionsCocktail {
     }
 
     private fun childAtPosition(
-        parentMatcher: Matcher<View>, position: Int
+        parentMatcher: Matcher<View>,
+        position: Int
     ): Matcher<View> {
 
         return object : TypeSafeMatcher<View>() {
@@ -175,8 +175,8 @@ class CheckCorrectInstructionsCocktail {
 
             public override fun matchesSafely(view: View): Boolean {
                 val parent = view.parent
-                return parent is ViewGroup && parentMatcher.matches(parent)
-                        && view == parent.getChildAt(position)
+                return parent is ViewGroup && parentMatcher.matches(parent) &&
+                        view == parent.getChildAt(position)
             }
         }
     }

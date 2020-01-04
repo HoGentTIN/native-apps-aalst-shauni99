@@ -36,4 +36,4 @@ class CocktailDetailViewModel(cocktail: Cocktail, app: Application) : AndroidVie
     init {
         _selectedCocktail.value = cocktail
     }
-   }
+}
